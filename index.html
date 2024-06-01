@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PDF.js Viewer with Statistics Table</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+      }
+      .container {
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 20px;
+        background-color: #ffffff;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+      }
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+      .pdf-viewer {
+        margin-top: 20px;
+      }
+      .pdf-viewer object {
+        width: 100%;
+        height: 600px;
+        border: none;
+      }
+      .blog-section {
+        margin-top: 40px;
+      }
+      .blog-section h2 {
+        color: #333;
+        border-bottom: 2px solid #f4f4f9;
+        padding-bottom: 10px;
+      }
+      .blog-section p {
+        color: #555;
+        line-height: 1.6;
+        margin: 20px 0;
+      }
+      footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #333;
+        color: #ffffff;
+        margin-top: 40px;
+        border-radius: 0 0 8px 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Statistics Table Values</h1>
+      <div class="pdf-viewer" id="pdf-viewer"></div>
+      <div class="blog-section">
+        <h2>Understanding Statistics Tables</h2>
+        <p>
+          Statistics tables are crucial tools in data analysis, providing a
+          structured way to display and interpret data. They can include a
+          variety of statistical measures such as mean, median, mode, standard
+          deviation, and variance, among others. Understanding these values
+          helps in making informed decisions based on data.
+        </p>
+        <p>
+          A mean is the average of a set of numbers and is calculated by adding
+          all the numbers and dividing by the count of numbers. The median is
+          the middle value when the numbers are arranged in ascending order. The
+          mode is the most frequently occurring value in a set of numbers.
+        </p>
+        <p>
+          The standard deviation measures the amount of variation or dispersion
+          of a set of values. A low standard deviation indicates that the values
+          tend to be close to the mean, while a high standard deviation
+          indicates that the values are spread out over a wider range.
+        </p>
+        <object
+          class="pdf"
+          data="statstable.pdf"
+          width="800"
+          height="1000"
+        ></object>
+      </div>
+    </div>
+    <footer>&copy; 2024 Statistics Inc. All rights reserved.</footer>
+  </body>
+</html>
